@@ -25,6 +25,18 @@ int main()
 
 	Sudoku sudoku;
 	bool result = sudoku.SolvePuzzle(BOARD[0]);
+
+	if (result)
+	{
+		std::cout << "Sudoku solved!\nPress any key to exit.";
+		std::cin.ignore();
+	}
+	else
+	{
+		std::cout << "Could not solve the puzzle...";
+		std::cin.ignore();
+	}
+
 	return 0;
 }
 
