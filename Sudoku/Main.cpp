@@ -20,7 +20,6 @@ int BOARD[9][9] =
 
 int main()
 {
-	printf("Testing\n");
 	PrintBoard(BOARD[0]);
 
 	Sudoku sudoku;
@@ -28,7 +27,7 @@ int main()
 
 	if (result)
 	{
-		std::cout << "Sudoku solved!\nPress any key to exit.";
+		std::cout << "Sudoku solved!\n";
 		std::cin.ignore();
 	}
 	else
